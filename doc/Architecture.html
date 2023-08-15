@@ -1,0 +1,33 @@
+<main>
+  <h1>MobusMessenger</h1>	
+  <h2>Architecture</h2>
+
+  <script type="text/typogram">
+  Mobus(A)                      SERVER                      Mobus(B)
+	+---------+                   +-------+                   +---------+
+	| +-----+ |                   | Rails |                   | +-----+ | 
+	| |     | |       HTTP        | ===== |        HTTP       | |     | |
+	| +-----+ |  -----send----->  |       |  <-----send-----  | +-----+ | 
+	|     +--+|  <----recv------  |   o   |  ------recv---->  |     +--+|
+	|  o  |  ||                   |   o   |                   |  o  |  || 
+	|     +--+|                   |   o   |                   |     +--+|
+	+---------+                   +-------+                   +---------+
+
+  </script>
+</main>
+
+<link href="google-sans.css" media="screen" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-dark.min.css">
+<script src="https://google.github.io/typograms/typograms.js"></script>
+<style>
+html, body, .header {
+margin: 0;
+padding: 0;
+font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
+}
+.container, main {
+max-width: 740px;
+margin: auto;
+margin-top: 20px;
+}
+</style>
