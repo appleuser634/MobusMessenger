@@ -1,0 +1,10 @@
+services:
+  rails:
+    build:
+      context: ./
+    init: true
+    volumes:
+      - .:/root/MobusMessenger
+    tty: true #タスク終了してもコンテナを起動し続ける
+    ports:
+      - "0.0.0.0:3000:3000"
